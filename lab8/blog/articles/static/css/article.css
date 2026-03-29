@@ -1,0 +1,158 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.archive {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-title a {
+    color: #ffffff;
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+}
+
+.article-created-date {
+    text-align: right;
+    font-style: italic;
+}
+
+.article-info::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.all-articles {
+    color: #ffffff;
+    float: right;
+}
+
+.article-content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+
+.content form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    min-height: 200px;
+    resize: vertical;
+}
+
+.content form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #16a085;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.content form input[type="submit"]:hover {
+    background-color: #148f77;
+}
+
+.form-errors {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.auth-link {
+    text-align: center;
+}
+
+.auth-link a {
+    color: #ffffff;
+}
+
+.fold-wrapper {
+    text-align: right;
+}
+
+.fold-button {
+    background: none;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.fold-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.one-post {
+    position: relative;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity: 0;
+    z-index: -1;
+}
+
+.one-post.folded .article-author {
+    display: none;
+}
+
+.one-post.folded .article-created-date {
+    display: none;
+}
+
+.one-post.folded .article-text {
+    display: none;
+}
